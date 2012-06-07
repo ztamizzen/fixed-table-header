@@ -85,7 +85,7 @@
 
     $.fn.fixedTableFooter = function(o) {
         var options = $.extend({
-                fixedTop: 0,
+                fixedBottom: 0,
                 interval: 250
             }, o),
             $win = $(window),
@@ -117,7 +117,7 @@
                 display: 'none',
                 left: leftOffset,
                 position: 'fixed',
-                bottom: 0,
+                bottom: parseInt(options.fixedBottom, 10),
                 width: tableWidth
             });
             $this.before($tableClone);
@@ -147,7 +147,7 @@
                         $tableClone.hide();
                     }
                 }
-            }, 250);
+            }, options.interval);
         });
     };
 
