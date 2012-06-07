@@ -3,6 +3,9 @@
  * User: mali01
  * Date: 2012-06-07
  * Time: 12:51
+ *
+ * @author mats.lindblad[at]gmail.com
+ * @example $('.fixed-table-header').fixedTableHeader();
  */
 (function() {
     $.fn.fixedTableHeader = function(o) {
