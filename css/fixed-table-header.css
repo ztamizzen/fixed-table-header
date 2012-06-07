@@ -1,0 +1,43 @@
+/**
+ * User: mali01
+ * Date: 2012-06-07
+ * Time: 12:56
+ */
+html, body {
+    background-color: #fff;
+    color: #000;
+    font: normal 14px/20px Pontano Sans, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.fixed-table-header {
+    border: 1px solid #eee;
+    border-collapse: collapse;
+    margin: 2em auto 1em;
+    min-width: 640px;
+}
+
+#col-idx, .col-idx { width: 5% }
+#col-name, .col-name { width: 40% }
+#col-age, .col-age { width: 10% }
+#col-sex, .col-sex { width: 15% }
+#col-location, .col-location { width: 30% }
+
+.fixed-table-header thead {
+    background-color: #eee;
+}
+
+.fixed-table-header thead th {
+    text-align: left;
+}
+
+.fixed-table-header thead th,
+.fixed-table-header tbody td {
+    padding: 3px 8px;
+}
+
+.fixed-table-header tbody tr:nth-child(odd) td {
+    background-color: #ccc;
+    color: #000;
+}
