@@ -11,7 +11,21 @@ html, body {
     padding: 0;
 }
 
-.fixed-table-header {
+#example {
+    margin: auto;
+    width: 640px;
+}
+
+#example h1 {
+    font-family: Oxygen;
+    fons-size: 16px;
+}
+
+.fixed-table-header,
+.fixed-table-footer {
+    -moz-transition: left 0.2s ease 0s,
+                     width 0.2s ease 0s;
+
     border: 1px solid #eee;
     border-collapse: collapse;
     margin: 2em auto 1em;
@@ -24,16 +38,26 @@ html, body {
 #col-sex, .col-sex { width: 15% }
 #col-location, .col-location { width: 30% }
 
-.fixed-table-header thead {
+.fixed-table-header thead,
+.fixed-table-footer tfoot {
     background-color: #eee;
 }
 
-.fixed-table-header thead th {
+.fixed-table-header thead th,
+.fixed-table-footer tfoot th {
+    font-family: Oxygen;
+    font-size: 16px;
     text-align: left;
+    text-shadow: 1px 1px 0 #fff;
+}
+
+.fixed-table-footer tfoot th {
+    font-size: 11px;
 }
 
 .fixed-table-header thead th,
-.fixed-table-header tbody td {
+.fixed-table-header tbody td,
+.fixed-table-footer tfoot th {
     padding: 3px 8px;
 }
 
