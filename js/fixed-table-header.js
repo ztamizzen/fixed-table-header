@@ -6,7 +6,7 @@
  *
  * @author mats.lindblad[at]gmail.com
  */
-(function() {
+(function($) {
     /**
      * @example See bottom of file!
      * @param o
