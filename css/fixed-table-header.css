@@ -6,7 +6,7 @@
 html, body {
     background-color: #fff;
     color: #000;
-    font: normal 14px/20px Pontano Sans, Arial, sans-serif;
+    font: normal 14px/20px "Pontano Sans", Arial, sans-serif;
     margin: 0;
     padding: 0;
 }
@@ -18,7 +18,7 @@ html, body {
 
 #example h1 {
     font-family: Oxygen;
-    fons-size: 16px;
+    font-size: 16px;
 }
 
 .fixed-table-header,
